@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnitrix Database</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="/src/script.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <p class="eyebrow">Registro de Espécie</p>
+            <h1>Roda de <em>Atributos</em></h1>
+        </header>
+        <!-- ALIEN INFO BOARD -->
+        <div class="board">
+            <section>
+                <p class="panel-title">Espécime</p>
+                <input class="name-field" id="nome" placeholder="inserir nome" maxlength="28" aria-label="Nome do espécime">
+
+                <p class="panel-title">Atributos</p>
+                <div id="attrs"></div>
+
+                <div class="row-btn">
+                <button id="btn-rand">Atributos aleatórios</button>
+                <button id="btn-reset">Equilibrar</button>
+                <button id="btn-png">Baixar imagem</button>
+                </div>
+            </section>
+
+            <section>
+                <p class="panel-title">Gráfico</p>
+                <div class="wheel-card">
+                <svg id="wheel" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Roda de atributos do espécime"></svg>
+                </div>
+                <div class="opts">
+                <label>COR<input type="color" id="cor" value="#328336"></label>
+                </div>
+            </section>
+        </div>
+        <!-- STATS PIECE -->
+        <div class="stats">
+            <div class="stat">
+            <h3>Total</h3>
+            <div class="val" id="v-total">0</div>
+            <div class="calc" id="c-total"></div>
+            </div>
+            <div class="stat">
+            <h3>Vida</h3>
+            <div class="val" id="v-hp">20</div>
+            <div class="calc" id="c-hp"></div>
+            </div>
+            <div class="stat">
+            <h3>Energia</h3>
+            <div class="val" id="v-en">25</div>
+            <div class="calc" id="c-en"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
